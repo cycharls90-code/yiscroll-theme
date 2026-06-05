@@ -5,3 +5,138 @@ Author: YiScroll Team
 Description: Custom dark theme for YiScroll digital marketing agency
 Version: 1.0
 */
+
+/*
+Theme Name: YiScroll
+Theme URI: https://yiscroll.com
+Author: YiScroll Team
+Description: Custom dark theme for YiScroll digital marketing agency
+Version: 1.0
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0A0A0A;
+    color: #F0F0F0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* HEADER */
+.site-header {
+    background: #0A0A0A;
+    border-bottom: 1px solid #222;
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #E8FF00;
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.main-nav a {
+    color: #F0F0F0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #E8FF00;
+}
+
+.btn-nav {
+    background: #E8FF00;
+    color: #000 !important;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.btn-nav:hover {
+    background: #d4e800;
+}
+
+/* FOOTER */
+.site-footer {
+    background: #111;
+    border-top: 1px solid #222;
+    padding: 3rem 0;
+    text-align: center;
+    color: #888;
+}
+
+.footer-logo a {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #E8FF00;
+    text-decoration: none;
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: #888;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.footer-links a:hover {
+    color: #E8FF00;
+}
+
+/* MAIN */
+.main-content {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.main-content h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #F0F0F0;
+}
+
+.main-content p {
+    color: #888;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}

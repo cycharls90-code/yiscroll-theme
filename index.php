@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
-<h1>YiScroll is coming soon!</h1>
+<main class="main-content">
+    <h1>Welcome to YiScroll</h1>
+    <p>Digital Marketing Agency</p>
+</main>
 
 <?php get_footer(); ?>
