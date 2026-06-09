@@ -38,20 +38,3 @@
     <a href="#" class="btn-primary btn-nav-mobile">Get Free Consultation</a>
 </div>
 
-<script>
-const header = document.getElementById('site-header');
-window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 50);
-});
-const hamburger = document.getElementById('hamburger');
-const mobileNav = document.getElementById('mobileNav');
-const closeBtn = document.getElementById('mobileNavClose');
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    mobileNav.classList.toggle('open');
-});
-closeBtn.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    mobileNav.classList.remove('open');
-});
-</script>

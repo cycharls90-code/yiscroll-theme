@@ -83,3 +83,24 @@ const counterObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 statNums.forEach(el => counterObserver.observe(el));
+
+// ── Scroll Reveal Animations ──
+const revealElements = document.querySelectorAll(
+    '.card, .stat-item, .about-grid, .portfolio-card, .blog-card, .section-title, .section-label, .section-sub'
+);
+
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.classList.add('revealed');
+            }, index * 100);
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+
+revealElements.forEach(el => {
+    el.classList.add('reveal-hidden');
+    revealObserver.observe(el);
+});
