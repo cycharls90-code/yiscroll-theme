@@ -104,3 +104,29 @@ revealElements.forEach(el => {
     el.classList.add('reveal-hidden');
     revealObserver.observe(el);
 });
+
+// ── Popup After 30 Seconds ──
+setTimeout(() => {
+    const popup = document.getElementById('consultation-popup');
+    if (popup) {
+        popup.classList.add('show');
+    }
+}, 30000);
+
+function closePopup() {
+    const popup = document.getElementById('consultation-popup');
+    if (popup) {
+        popup.classList.remove('show');
+    }
+}
+
+// ── FAQ Accordion ──
+const faqItems = document.querySelectorAll('.faq-item');
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach(i => i.classList.remove('active'));
+        if (!isActive) item.classList.add('active');
+    });
+});

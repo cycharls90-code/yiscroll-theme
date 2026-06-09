@@ -1,3 +1,15 @@
+<!-- Consultation Popup -->
+<div class="popup-overlay" id="consultation-popup">
+    <div class="popup-box">
+        <button class="popup-close" onclick="closePopup()">✕</button>
+        <div class="popup-icon">🚀</div>
+        <h3>Get a Free Digital Audit!</h3>
+        <p>Find out how YiScroll can help grow your business online — completely free.</p>
+        <a href="<?php echo home_url('/contact'); ?>" class="btn-primary">Claim Free Audit →</a>
+        <button class="popup-skip" onclick="closePopup()">No thanks</button>
+    </div>
+</div>
+
 <footer class="site-footer">
     <div class="container">
         <div class="footer-grid">
